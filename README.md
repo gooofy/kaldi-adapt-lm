@@ -33,7 +33,7 @@ with those files in place we can now train our new language model using KenLM:
 
 Now we can start the kaldi model adaptation process:
 
-   ./kaldi-adapt-lm.py ${MODEL} lm.arpa mymodel
+    ./kaldi-adapt-lm.py ${MODEL} lm.arpa mymodel
 
 You should now be able to find a tarball of the resulting model inside the work subdirectory.
 
