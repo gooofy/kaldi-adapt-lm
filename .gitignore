@@ -102,3 +102,12 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+
+lm.arpa
+models/
+old/
+tst/
+work.1/
+work/
+
