@@ -70,7 +70,7 @@ def kaldi_adapt_lm(kaldi_root, src_model_dir, lm_fn, work_dir, dst_model_name):
         if os.path.exists('%s/model/%s' % (src_model_dir, optional_file)):
             misc.copy_file ('%s/model/%s' % (src_model_dir, optional_file), '%s/exp/adapt/%s' % (work_dir, optional_file))
 
-    if os.path.exists('%s/model/extractor' % src_model_dir):
+    if os.path.exists('%s/extractor' % src_model_dir):
 
         misc.mkdirs ('%s/exp/extractor' % work_dir)
 
