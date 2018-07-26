@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name                 = 'kaldi-adapt-lm',
-    version              = '0.1.1',
+    version              = '0.1.2',
     description          = 'Adapt Kaldi-ASR nnet3 chain models from Zamia-Speech.org to a different language model.',
     long_description     = open('README.md').read(),
     author               = 'Guenter Bartsch',
