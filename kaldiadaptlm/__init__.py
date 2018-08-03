@@ -101,11 +101,11 @@ def kaldi_adapt_lm(kaldi_root, src_model_dir, lm_fn, work_dir, dst_model_name):
     misc.symlink ('%s/egs/wsj/s5/steps' % kaldi_root, '%s/steps' % work_dir)
     misc.symlink ('%s/egs/wsj/s5/utils' % kaldi_root, '%s/utils' % work_dir)
 
-    cmd = 'pushd %s && bash run-adaptation.sh && popd' % work_dir
+    cmd = '/bin/bash -c "pushd %s && bash run-adaptation.sh && popd"' % work_dir
     logging.info (cmd)
     os.system (cmd)
 
-    cmd = 'pushd %s && bash model-dist.sh "%s" && popd' % (work_dir, dst_model_name)
+    cmd = '/bin/bash -c "pushd %s && bash model-dist.sh "%s" && popd"' % (work_dir, dst_model_name)
     logging.info (cmd)
     os.system (cmd)
 
