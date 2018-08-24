@@ -7,13 +7,10 @@ fi
 
 MODEL=$1
 
-datum=`date +%Y%m%d`
-REVISION="r$datum"
-
 EXPNAME=adapt
 EXPDIR="exp"
 
-AMNAME="kaldi-${MODEL}-${EXPNAME}-${REVISION}"
+AMNAME="kaldi-${MODEL}-${EXPNAME}"
 
 echo "$AMNAME ..."
 
