@@ -82,7 +82,9 @@ def kaldi_adapt_lm(kaldi_root, src_model_dir, lm_fn, work_dir, dst_model_name):
 
         misc.mkdirs ('%s/exp/ivectors_test_hires/conf' % work_dir)
 
-        misc.copy_file ('%s/ivectors_test_hires/conf/splice.conf'       % src_model_dir, '%s/exp/ivectors_test_hires/conf'    % work_dir)
+        misc.copy_file ('%s/ivectors_test_hires/conf/splice.conf'            % src_model_dir, '%s/exp/ivectors_test_hires/conf'    % work_dir)
+        misc.copy_file ('%s/ivectors_test_hires/conf/ivector_extractor.conf' % src_model_dir, '%s/exp/ivectors_test_hires/conf'    % work_dir)
+        misc.copy_file ('%s/ivectors_test_hires/conf/online_cmvn.conf'       % src_model_dir, '%s/exp/ivectors_test_hires/conf'    % work_dir)
 
     misc.mkdirs ('%s/conf'  % work_dir)
     misc.copy_file ('%s/conf/mfcc.conf' % src_model_dir,        '%s/conf/mfcc.conf' % work_dir)
