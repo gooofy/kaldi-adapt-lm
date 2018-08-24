@@ -20,7 +20,7 @@ setup(
                                'Programming Language :: Python :: 2.7',
                                'Intended Audience :: Developers',
                                'Topic :: Software Development :: Libraries :: Python Modules',
-                               'Topic :: Multimedia :: Sound/Audio :: Speech'
+                               'Topic :: Multimedia :: Sound/Audio :: Speech',
                                'Topic :: Scientific/Engineering :: Artificial Intelligence'
                            ],
     license              = 'Apache',
