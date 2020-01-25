@@ -37,6 +37,11 @@ Now we can start the kaldi model adaptation process:
 
 You should now be able to find a tarball of the resulting model inside the work subdirectory.
 
+If at the end of adaptation process you have a lot of messages like "cp: cannot stat
+'exp/adapt/graph/HCLG.fst': No such file or directory", then highly likely you run out of memory
+during adaptation process. (For example adapting kaldi-generic-en-tdnn_250 model consumes near 12Gb
+of RAM)
+
 Links
 -----
 
